@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "splspr"
-version = "0.1.2"
+version = "0.1.3"
+authors = [{ name = "cuber~" }]
 description = "Read SPL and SPR measurements from a compatible serial device"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -18,6 +19,7 @@ classifiers = [
 ]
 
 [project.urls]
+Homepage = "https://github.com/cuber244/splspr-monitor"
 Source = "https://github.com/cuber244/splspr-monitor"
 Issues = "https://github.com/cuber244/splspr-monitor/issues"
 
