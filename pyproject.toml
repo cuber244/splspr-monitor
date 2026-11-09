@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "splspr"
+version = "0.1.2"
+description = "Read SPL and SPR measurements from a compatible serial device"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["pyserial>=3.5"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Hardware",
+]
+
+[project.urls]
+Source = "https://github.com/cuber244/splspr-monitor"
+Issues = "https://github.com/cuber244/splspr-monitor/issues"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["spl_spr_monitor.py"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["spl_spr_monitor.py", "examples/spl_spr_key_demo.py", "LICENSE", "README.md", "pyproject.toml"]
